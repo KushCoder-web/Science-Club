@@ -1,0 +1,133 @@
+<!-- File: contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Science Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-group {
+            margin: 2px;
+            padding: 5px;
+        }
+
+        .input-form {
+            border: 2px solid black;
+            border-radius: 5px;
+
+        }
+
+        .btn {
+            background-color: burlywood;
+            color: white;
+            border: 2px solid black;
+            padding: 5PX 13px;
+            margin: 3px;
+            position: relative;
+            left: 10px;
+            bottom: 1px
+        }
+
+        .btn:hover {
+            background-color: lime;
+            color: black;
+            transition-duration: 1s;
+            transition-delay: 0.25s;
+            cursor: pointer;
+        }
+
+        /* Animation Styles */
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .slide-in {
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container slide-in">
+            <h1>Science Club<a href="login..html"><button class="log">Log in</button></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container fade-in">
+            <h2>Contact Us</h2>
+            <p>Have questions, suggestions, or want to join the Science Club? We would love to hear from you! Fill out
+                the form below or reach us directly via email.</p>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required class="input-form">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required class="input-form">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject: </label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required class="input-form">
+                </div>
+
+                <div class="form-group">
+                    <label for="message" style="position: relative; bottom: 10px;">Message:</label>
+                    <textarea id="message" style="position: relative; top: 10px;" name="message"
+                        placeholder="Your Message" column="2" class="input-form"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
+            <h3>Reach Us</h3>
+            <ul class="contact-info">
+                <li><strong>Email:</strong> contact@scienceclub.org</li>
+                <li><strong>Phone:</strong> +91-8447111507</li>
+                <li><strong>Address:</strong> Science Club HQ, Connaught Place, New Delhi</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Science Club. All Rights Reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

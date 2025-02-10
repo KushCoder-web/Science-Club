@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Club - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Main content enhancement styles */
+        .hero {
+            text-align: center;
+            
+            
+            padding: 10px;
+        }
+
+        .hero h3 {
+            font-size: 2.5rem;
+            
+            
+        }
+
+        .hero p {
+            font-size: 1rem;
+            
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 70px auto;
+            max-width: 1200px;
+            padding: 30px;
+        }
+
+        .project-item {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .project-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        .project-item .content {
+            flex-grow: 1;
+        }
+
+        .project-item h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 35px;
+            font-size: 1.4rem;
+            color: #fff;
+            background-color: #00796b;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #004d40;
+        }
+        fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .slide-in {
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container slide-in">
+            <h1>Science Club <a href="login..html"><button class="log">Log in</button></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container slide-in ">
+                <h3>Our Innovative Projects</h3>
+                <p>Explore the latest projects by our talented Science Club members!</p>
+            </div>
+        </section>
+        <section class="project-list slide-in">
+            <div class="project-item">
+                <img src="https://img.freepik.com/premium-psd/psd-renewable-sustainable-solar-energy-square-social-media-banner-template_870996-44.jpg" alt="Project 1" width="150px">
+                <div class="content">
+                    <h3>Project One: Renewable Energy</h3>
+                    <p>Discover how we harness the power of renewable resources to create sustainable solutions for the future.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJGqiz0Y1qeKCHEJRDhUHP359JYYF_IVslrg&s" alt="Project 2">
+                <div class="content">
+                    <h3>Project Two: Robotics Exploration</h3>
+                    <p>Explore our journey in creating intelligent robots that assist in daily tasks and futuristic missions.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7d7N7_GSrtaJDbDyW5BIT5RNZI1xgo7VSug&s" alt="Project 3">
+                <div class="content">
+                    <h3>Project Three: Space Innovation</h3>
+                    <p>Dive into our experiments and designs aimed at unraveling the mysteries of outer space.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJpI98NDlI1VW7cRYiCn0kn5JglO_Foq1gMw&s" alt="Project 4">
+                <div class="content">
+                    <h3>Project Four: Health Tech</h3>
+                    <p>Learn about our breakthroughs in merging technology and healthcare to improve lives.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Science Club. All Rights Reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

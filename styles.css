@@ -1,0 +1,166 @@
+/* File: styles.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+nav ul li a.active{
+    COlor: rgb(38, 255, 19);
+}
+nav ul li a:hover {
+    color: rgb(38, 255, 19);
+    font-style: bold;
+    transition-delay: 0.75s;
+    transition-duration: 0.5s;
+
+}
+
+/* Hero Section */
+/* Button Styles */
+.log {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: rgb(22, 16, 16);
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: solid;
+    position: relative;
+    left: 23%;
+    bottom: 7px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid black;
+}
+
+.log:hover {
+    background-color: #3e8e41;
+    color: white; 
+    transition-duration: 0.5s;/* Darker green on hover */
+}
+.hero {
+    background: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.hero h2 {
+    margin: 0 0 1em;
+    font-size: 2.5em;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #2c3e50;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.hero .btn:hover {
+    background: #1a252f;
+}
+
+/* Highlights Section */
+.highlights {
+    background: #ecf0f1;
+    padding: 2em 0;
+}
+
+.highlights .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.highlights article {
+    flex: 1 1 calc(33% - 2em);
+    background: #fff;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.highlights article h3 {
+    margin-top: 0;
+    color: #3498db;
+}
+#img{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+
+
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

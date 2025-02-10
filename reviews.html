@@ -1,0 +1,101 @@
+<!-- reviews.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Science Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+        /* Animation Styles */
+        .fade-in {
+          animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+
+        .slide-in {
+          animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+          from {
+            transform: translateX(-100%);
+          }
+
+          to {
+            transform: translateX(0);
+          }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container slide-in">
+            <h1>Science Club<a href="login..html"><button class="log">Log in</button></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reviews.html" class="active">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container fade-in">
+            <h2>Reviews</h2>
+            <p>Read what people are saying about the Science Club. We are proud of the positive impact we have made on our community.</p>
+            <div class="review-item">
+                <h4>"This club has been a game-changer for my passion for science! I've learned so much and met amazing people."</h4>
+                <p>- John Doe, Science Enthusiast</p>
+            </div>
+            <hr>
+            <div class="review-item">
+                <h4>"The workshops and events are always engaging and insightful. Highly recommend it!"</h4>
+                <p>- Jane Smith, Student</p>
+            </div>
+            <hr>
+            <div class="review-item">
+                <h4>"Science Club has provided me with the opportunity to explore my interests and make a difference."</h4>
+                <p>- Peter Wilson, Community Member</p>
+            </div>
+            <hr>
+            <div class="review-item">
+                <h4>"A treasure trove of experiments and fun science facts! Keeps me coming back for more."</h4>
+                <p>- Aryan Gika, IITian</p>
+            </div>
+            <hr>
+            <div class="review-item">
+                <h4>"The interactive quizzes and live sessions are amazing for learning in a fun way."</h4>
+                <p>- Dau Sahab, Professor in DBSE</p>
+            </div>
+            <hr>
+            <div class="review-item">
+                <h4>"Simple explanations and step-by-step guides make it perfect for students like me."</h4>
+                <p>- Alex Rought, Science Enthusiast</p>
+            </div>
+            <hr>
+            
+
+        </section>
+    </main>
+    <footer>
+        <div class="container slide-in fade-in">
+            <p>&copy; 2024 Science Club. All Rights Reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
